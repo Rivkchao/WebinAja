@@ -1,8 +1,6 @@
 :root {
-    --navy: #0a0f1e;
-    --navy-2: #111827;
+    --navy: radial-gradient(circle, #1E3A8A 47%, #14234B 100%);
     --accent: #3A00FB;
-    --accent-light: #60a5fa;
     --accent-glow: rgba(59, 130, 246, 0.18);
     --white: #ffffff;
     --gray-100: #f3f4f6;
@@ -138,7 +136,7 @@ nav {
 .mobile-menu {
     display: none;
     flex-direction: column;
-    background: white;
+    background: var(--white);
     border-top: 1px solid var(--gray-200);
     padding: 12px 24px 20px;
     gap: 4px;
@@ -165,97 +163,43 @@ nav {
 
 /* ─── HERO ─── */
 .hero {
-    max-width: 1280px;
+    max-width: 1440px;
     margin: 32px auto;
     padding: 0 24px;
 }
 
 .hero-inner {
     background: var(--navy);
-    border-radius: var(--radius-xl);
-    padding: 72px 64px;
-    overflow: hidden;
-    min-height: 520px;
-}
-
-.hero-bg-circle {
-    position: absolute;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(59, 130, 246, 0.22) 0%, transparent 70%);
-    pointer-events: none;
-}
-
-.hero-bg-circle.c1 {
-    width: 600px;
-    height: 600px;
-    right: -100px;
-    top: -100px;
-}
-
-.hero-bg-circle.c2 {
-    width: 300px;
-    height: 300px;
-    left: 200px;
-    bottom: -100px;
-    opacity: 0.4;
+    border-radius: 24px;
+    padding: 64px 64px;
+    min-height: 500px;
 }
 
 .hero-content {
-    z-index: 2;
-    max-width: 680px;
+    width: 100%;
 }
 
 .hero-badge {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: rgba(59, 130, 246, 0.15);
-    border: 1px solid rgba(59, 130, 246, 0.3);
+    background: rgba(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 100px;
     padding: 6px 16px;
     font-size: 0.8rem;
     font-weight: 600;
-    color: var(--accent-light);
+    color: black;
     margin-bottom: 24px;
     letter-spacing: 0.3px;
 }
 
-.hero-badge::before {
-    content: '';
-    width: 6px;
-    height: 6px;
-    background: var(--accent);
-    border-radius: 50%;
-    animation: pulse 2s ease infinite;
-}
-
-@keyframes pulse {
-
-    0%,
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
-
-    50% {
-        opacity: 0.5;
-        transform: scale(1.4);
-    }
-}
-
 .hero h1 {
-    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-size: clamp(2rem, 3vw, 2.5rem);
     font-weight: 800;
-    color: white;
+    color: var(--white);
     margin-bottom: 16px;
     letter-spacing: -1px;
-}
-
-.hero h1 .highlight {
-    color: transparent;
-    background: linear-gradient(120deg, var(--accent-light), #818cf8);
-    -webkit-background-clip: text;
-    background-clip: text;
 }
 
 .hero-sub {
@@ -266,10 +210,9 @@ nav {
 }
 
 .hero p {
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 1rem;
+    color: rgba(255, 255, 255);
+    font-size: 1.5rem;
     margin-bottom: 36px;
-    max-width: 480px;
 }
 
 .hero-actions {
@@ -277,43 +220,15 @@ nav {
     flex-wrap: wrap;
 }
 
-.btn-primary {
-    background: var(--accent);
-    color: white;
-    padding: 14px 32px;
-    border-radius: 12px;
-    font-weight: 700;
-    font-size: 0.95rem;
-    border: none;
-    cursor: pointer;
-    transition: var(--transition);
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
+.hero .btn-primary {
+    border-radius: 10px;
 }
 
-.btn-primary:hover {
-    background: #2563eb;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(59, 130, 246, 0.4);
+.hero .btn-secondary {
+    border-radius: 10px;
 }
 
-.btn-secondary {
-    background: rgba(255, 255, 255, 0.07);
-    color: rgba(255, 255, 255, 0.85);
-    padding: 14px 28px;
-    border-radius: 12px;
-    font-weight: 600;
-    font-size: 0.95rem;
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    cursor: pointer;
-    transition: var(--transition);
-    text-decoration: none;
-    backdrop-filter: blur(8px);
-}
-
-.btn-secondary:hover {
+.hero .btn-secondary:hover {
     background: rgba(255, 255, 255, 0.12);
     border-color: rgba(255, 255, 255, 0.25);
     transform: translateY(-2px);
@@ -374,12 +289,8 @@ nav {
     padding: 80px 0px;
 }
 
-.why-header {
-    max-width: 800px;
-}
-
 .why-header h2 {
-    color: white;
+    color: var(--white);
 }
 
 .why-timeline {
@@ -416,7 +327,7 @@ nav {
     width: 60px;
     height: 60px;
     background: #8e8e8e;
-    color: white;
+    color: var(--white);
     border-radius: 50%;
     margin: auto;
     display: flex;
@@ -456,7 +367,7 @@ nav {
 }
 
 .why-text-box h3 {
-    color: white;
+    color: var(--white);
     margin-bottom: 8px;
     font-size: 1.25rem;
 }
@@ -469,21 +380,11 @@ nav {
 
 /* ─── MARQUEE ─── */
 .marquee-section {
-    background: white;
+    background: var(--white);
     border-top: 1px solid var(--gray-200);
     border-bottom: 1px solid var(--gray-200);
     padding: 32px 0;
     overflow: hidden;
-}
-
-.marquee-label {
-    text-align: center;
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: var(--black-900);
-    margin-bottom: 24px;
 }
 
 .marquee-track {
@@ -558,7 +459,7 @@ nav {
 }
 
 .service-card {
-    background: white;
+    background: var(--white);
     border: 1px solid var(--gray-200);
     border-radius: var(--radius-xl);
     overflow: hidden;
@@ -575,7 +476,7 @@ nav {
 .service-card-img {
     width: 100%;
     aspect-ratio: 16/9;
-    background: linear-gradient(135deg, var(--navy) 0%, #1e2d4e 100%);
+    background: var(--navy);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -687,15 +588,21 @@ nav {
 }
 
 .contact-grid {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 32px;
+    align-items: stretch;
 }
 
 .contact-form-card {
-    background: white;
+    background: var(--white);
     border-radius: var(--radius-xl);
     padding: 40px;
     box-shadow: var(--shadow-card);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .contact-form-card h3 {
@@ -745,9 +652,22 @@ nav {
 
 .form-group input:focus,
 .form-group textarea:focus {
-    background: white;
+    background: var(--white);
     border-color: var(--accent);
     box-shadow: 0 0 0 3px var(--accent-glow);
+}
+
+.btn-blue {
+    background: var(--navy);
+}
+
+.btn-blue svg {
+    width: 16px;
+    height: 16px;
+}
+
+.btn-blue:hover {
+    box-shadow: 0 10px 25px rgba(79, 70, 229, 0.35);
 }
 
 .contact-info {
@@ -755,7 +675,7 @@ nav {
 }
 
 .contact-info-item {
-    background: white;
+    background: var(--white);
     border-radius: var(--radius-lg);
     padding: 24px;
     gap: 16px;
@@ -826,7 +746,7 @@ footer {
 }
 
 .footer-brand .nav-logo {
-    color: white;
+    color: var(--white);
     font-size: 1.4rem;
     display: inline-flex;
 }
@@ -859,7 +779,7 @@ footer {
 
 .footer-social a:hover {
     background: var(--accent);
-    color: white;
+    color: var(--white);
     transform: translateY(-2px);
 }
 
@@ -872,7 +792,7 @@ footer {
 .footer-col h4 {
     font-size: 0.85rem;
     font-weight: 700;
-    color: white;
+    color: var(--white);
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -893,7 +813,7 @@ footer {
 }
 
 .footer-col ul li a:hover {
-    color: var(--accent-light);
+    color: var(--white);
 }
 
 .footer-bottom {

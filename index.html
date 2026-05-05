@@ -62,7 +62,7 @@
 
 <body>
     <!-- ─── HEADER ─── -->
-    <header class="mt-8">
+    <header>
         <nav class="flex justify-between items-center mx-auto">
             <a href="#" class="nav-logo flex items-center">
                 <div class="flex justify-center md:justify-start">
@@ -100,29 +100,37 @@
     <main>
         <!-- ─── HERO ─── -->
         <section id="hero" class="hero">
-            <div class="hero-inner flex items-center relative">
-                <div class="hero-bg-circle c1"></div>
-                <div class="hero-bg-circle c2"></div>
+            <div class="hero-inner relative overflow-hidden flex items-center w-full">
+                <!-- Background Glow-->
+                <div class="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-full opacity-60"
+                        style="background: radial-gradient(circle at 20% 30%, #2563EB 0%, transparent 50%);">
+                    </div>
 
-                <div class="hero-content relative">
+                    <div class="absolute inset-0 bg-[#153885] -z-10"></div>
+                </div>
+
+                <div class="hero-content relative z-2 w-full">
                     <div class="hero-badge">Software House Indonesia #1</div>
-                    <h1>
-                        Digitalkan Bisnis anda<br>
-                        dengan <span class="highlight">Solusi Modern</span>
+                    <h1 class="w-full max-w-none">
+                        Digitalkan Bisnis Anda dengan Solusi Modern</span>
                     </h1>
-                    <p class="hero-sub">Aplikasi Siap Pakai Untuk Bisnis Kamu!</p>
-                    <p>Kami membangun produk digital yang tidak hanya terlihat bagus, tapi benar-benar bekerja untuk
-                        bisnis anda, mulai dari website profesional hingga sistem manajemen terpadu.</p>
 
-                    <div class="hero-actions flex">
-                        <a href="#contact" class="btn-primary">
+                    <p class="hero-sub w-full">Aplikasi Siap Pakai Untuk Bisnis Kamu!</p>
+
+                    <p class="text-white/60 mb-8 w-full max-w-3xl">
+                        Kami membangun produk digital yang tidak hanya terlihat bagus, tapi benar-benar bekerja untuk
+                        bisnis Anda. Dari website profesional hingga sistem manajemen terpadu.
+                    </p>
+                    <div class="hero-actions flex gap-4">
+                        <a href="#contact"
+                            class="btn-primary bg-[#FFCC00] text-black inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl text-decoration-none font-bold whitespace-nowrap transition-all hover:bg-[#e6b800]">
                             Konsultasi Gratis
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2.5">
-                                <path d="M5 12h14M12 5l7 7-7 7" />
-                            </svg>
                         </a>
-                        <a href="#services" class="btn-secondary">Lihat Layanan</a>
+                        <a href="#services"
+                            class="btn-secondary bg-white/30 text-white inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-bold whitespace-nowrap transition-all hover:bg-white/40">
+                            Lihat Layanan
+                        </a>
                     </div>
                 </div>
             </div>
@@ -160,7 +168,6 @@
                         <div class="why-number">1</div>
                         <div class="why-content-card">
                             <div class="why-img-placeholder">
-                                <!-- Bisa diisi <img> atau SVG icon -->
                                 <svg width="60" height="60" viewBox="0 0 24 24" fill="rgba(255,255,255,0.2)">
                                     <path
                                         d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z" />
@@ -270,7 +277,6 @@
 
         <!-- ─── MARQUEE ─── -->
         <div id="client" class="marquee-section">
-            <p class="marquee-label">Dipercaya oleh berbagai bisnis</p>
             <div style="overflow:hidden; position:relative;">
                 <div
                     style="position:absolute;left:0;top:0;bottom:0;width:80px;background:linear-gradient(90deg,white,transparent);z-index:1;pointer-events:none;">
@@ -494,7 +500,9 @@
                                 placeholder="Halo, saya ingin bertanya tentang..."></textarea>
                         </div>
 
-                        <button type="button" class="btn-primary" style="width:100%; justify-content:center;"
+
+                        <button type="button"
+                            class="btn-blue inline-flex items-center justify-center gap-2.5 w-full px-5 py-3.5 text-[0.95rem] font-bold text-white rounded-[14px] transition-all duration-200 ease-in-out cursor-pointer hover:-translate-y-0.5 hover:shadow-lg active:scale-95"
                             id="btnKirim">
                             Kirim Pesan
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
