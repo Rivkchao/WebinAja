@@ -209,12 +209,6 @@ nav {
     margin-bottom: 12px;
 }
 
-.hero p {
-    color: rgba(255, 255, 255);
-    font-size: 1.5rem;
-    margin-bottom: 36px;
-}
-
 .hero-actions {
     gap: 14px;
     flex-wrap: wrap;
@@ -242,13 +236,6 @@ nav {
 }
 
 .section-label {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 0.8rem;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
     margin-bottom: 14px;
     border-bottom: 2px solid #3A00FB;
 }
@@ -533,7 +520,7 @@ nav {
 }
 
 .service-card p {
-    font-size: 0.855rem;
+    font-size: 0.85rem;
     color: var(--gray-500);
     line-height: 1.7;
 }
@@ -587,22 +574,10 @@ nav {
     font-size: 0.975rem;
 }
 
-.contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 32px;
-    align-items: stretch;
-}
-
 .contact-form-card {
     background: var(--white);
     border-radius: var(--radius-xl);
-    padding: 40px;
     box-shadow: var(--shadow-card);
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .contact-form-card h3 {
@@ -624,7 +599,6 @@ nav {
 
 .form-group label {
     display: block;
-    font-size: 0.85rem;
     font-weight: 600;
     color: var(--navy);
     margin-bottom: 8px;
@@ -790,7 +764,6 @@ footer {
 }
 
 .footer-col h4 {
-    font-size: 0.85rem;
     font-weight: 700;
     color: var(--white);
     margin-bottom: 20px;
