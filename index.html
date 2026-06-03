@@ -118,7 +118,8 @@
 
                     <p class="hero-sub w-full">Aplikasi Siap Pakai Untuk Bisnis Kamu!</p>
 
-                    <p class="text-white/80 text-base sm:text-lg leading-relaxed mb-6 max-w-xl tracking-[0.2px] text-justify">
+                    <p
+                        class="text-white/80 text-base sm:text-lg leading-relaxed mb-6 max-w-xl tracking-[0.2px] text-justify">
                         Kami membangun produk digital yang tidak hanya terlihat bagus, tapi benar-benar bekerja untuk
                         bisnis Anda. Dari website profesional hingga sistem manajemen terpadu.
                     </p>
@@ -575,7 +576,7 @@
     <!-- ─── FOOTER ─── -->
     <footer class="relative">
         <div class="footer-inner mx-auto">
-            <div class="grid grid-cols-1 min-[680px]:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-end">
+            <div class="grid grid-cols-1 min-[680px]:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
                 <div class="footer-brand min-[680px]:col-span-2 lg:col-span-1">
                     <a href="#" class="nav-logo">
                         <div class="flex justify-center md:justify-start">
@@ -584,18 +585,12 @@
                                 alt="WebinAja Logo">
                         </div>
                     </a>
-                  
+
                     <div class="footer-social">
                         <a href="#" aria-label="Facebook">
                             <svg viewBox="0 0 24 24">
                                 <path
                                     d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.378 14.792 5 15.5 5H18V0h-4.045C10.513 0 9 2.503 9 5.242V8z" />
-                            </svg>
-                        </a>
-                        <a href="#" aria-label="LinkedIn">
-                            <svg viewBox="0 0 24 24">
-                                <path
-                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                             </svg>
                         </a>
                         <a href="#" aria-label="Instagram">
@@ -616,7 +611,6 @@
                 <div class="footer-col">
                     <h4 class="text-[0.85rem]">Navigasi</h4>
                     <ul>
-                        <li><a href="#hero">Beranda</a></li>
                         <li><a href="#about">Tentang Kami</a></li>
                         <li><a href="#services">Layanan</a></li>
                         <li><a href="#contact">Kontak</a></li>
@@ -636,11 +630,92 @@
                 </div>
             </div>
 
-            <div class="footer-bottom">
-                <p>Copyright © 2026 <span>WebinAja</span>. All rights reserved.</p>
+            <div
+                class="footer-bottom flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t border-gray-200 mt-8">
+                <p class="text-sm text-gray-500 m-0">Copyright © 2026 <span class="font-semibold">WebinAja</span>. All
+                    rights reserved.</p>
+
+                <a href="javascript:void(0)" id="openTerms"
+                    class="inline-flex items-center gap-1.5 text-sm text-white hover:text-blue-600 transition-colors duration-200">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M11.25 11.25l.041-.02a.75.75 0 111.063.852l-.708 2.836a.75.75 0 001.063.852l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z">
+                        </path>
+                    </svg>
+                    Syarat & Ketentuan Layanan
+                </a>
             </div>
         </div>
     </footer>
+
+    <div id="termsModal"
+        class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300">
+        <div
+            class="bg-white rounded-xl shadow-xl max-w-2xl w-full max-h-[80vh] flex flex-col transform scale-95 transition-transform duration-300 overflow-hidden">
+
+            <div class="p-5 border-b border-gray-100 flex items-center justify-between bg-gray-50">
+                <h3 class="text-lg font-bold text-gray-800 flex items-center gap-2">
+                    <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" stroke-width="2"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                        </path>
+                    </svg>
+                    Syarat & Ketentuan Layanan WebinAja
+                </h3>
+                <button id="closeTermsTop"
+                    class="text-gray-400 hover:text-gray-600 p-1 rounded-lg hover:bg-gray-200 transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="p-6 overflow-y-auto text-sm text-gray-600 space-y-4 leading-relaxed">
+                <p class="text-xs text-gray-400 italic">Terakhir diperbarui: 3 Juni 2026</p>
+
+                <p>Selamat datang di <strong>WebinAja</strong>. Dengan mengakses dan menggunakan layanan kami, Anda
+                    dianggap telah membaca, memahami, dan menyetujui seluruh ketentuan yang tertulis di bawah ini.</p>
+
+                <hr class="border-gray-100" />
+
+                <h4 class="font-bold text-gray-800 text-base">1. Ruang Lingkup Layanan</h4>
+                <p>WebinAja menyediakan jasa transformasi digital meliputi Pembuatan Software Kustom, Aplikasi Kasir
+                    (POS), Sistem Inventaris, HRIS, Optimasi SEO, serta Konsultasi Bisnis Digital sesuai dengan
+                    kesepakatan tertulis pada lembar kerja (Invoice/Kontrak).</p>
+
+                <h4 class="font-bold text-gray-800 text-base">2. Hak Kekayaan Intelektual</h4>
+                <p>Seluruh hak cipta source code, desain, dan sistem yang dibangun akan sepenuhnya dialihkan kepada
+                    Klien setelah seluruh kewajiban pembayaran dilunasi, kecuali komponen pihak ketiga
+                    (library/framework) yang memiliki lisensi tersendiri.</p>
+
+                <h4 class="font-bold text-gray-800 text-base">3. Sistem Pembayaran & Pembatalan</h4>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>Proyek baru akan berjalan setelah pembayaran uang muka (DP) minimal 50% diterima.</li>
+                    <li>Jika terjadi pembatalan sepihak dari pihak Klien saat proyek sedang berjalan, uang muka yang
+                        telah dibayarkan tidak dapat dikembalikan.</li>
+                </ul>
+
+                <h4 class="font-bold text-gray-800 text-base">4. Batasan Tanggung Jawab</h4>
+                <p>WebinAja tidak bertanggung jawab atas kehilangan data, kebocoran akibat kelalaian kredensial pengguna
+                    oleh Klien, atau kerugian bisnis yang disebabkan oleh gangguan pihak ketiga seperti penyedia
+                    hosting, domain, atau API eksternal.</p>
+
+                <h4 class="font-bold text-gray-800 text-base">5. Garansi & Pemeliharaan (Maintenance)</h4>
+                <p>Kami memberikan garansi perbaikan bug/error secara gratis selama 3 bulan setelah sistem selesai
+                    diserahterimakan. Garansi tidak berlaku jika terjadi modifikasi code secara mandiri oleh pihak Klien
+                    atau pihak luar di luar tim WebinAja.</p>
+            </div>
+
+            <div class="p-4 border-t border-gray-100 flex justify-end bg-gray-50">
+                <button id="closeTermsBtn"
+                    class="px-5 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg text-sm shadow-sm transition-colors">
+                    Saya Mengerti & Setuju
+                </button>
+            </div>
+        </div>
+    </div>
 
     <!-- ─── SCRIPT ─── -->
     <script>
@@ -709,6 +784,38 @@
                 document.getElementById('phone').value = "";
                 document.getElementById('message').value = "";
             }
+        });
+
+        const modal = document.getElementById('termsModal');
+        const modalBox = modal.querySelector('.transform');
+        const openBtn = document.getElementById('openTerms');
+        const closeBtnTop = document.getElementById('closeTermsTop');
+        const closeBtnBtn = document.getElementById('closeTermsBtn');
+
+        // Fungsi Buka Modal
+        function openModal() {
+            modal.classList.remove('opacity-0', 'pointer-events-none');
+            modalBox.classList.remove('scale-95');
+            modalBox.classList.add('scale-100');
+            document.body.style.overflow = 'hidden'; // Kunci scroll background
+        }
+
+        // Fungsi Tutup Modal
+        function closeModal() {
+            modal.classList.add('opacity-0', 'pointer-events-none');
+            modalBox.classList.remove('scale-100');
+            modalBox.classList.add('scale-95');
+            document.body.style.overflow = ''; // Mengembalikan scroll background
+        }
+
+        // Trigger Event Listener
+        openBtn.addEventListener('click', openModal);
+        closeBtnTop.addEventListener('click', closeModal);
+        closeBtnBtn.addEventListener('click', closeModal);
+
+        // Tutup jika klik area di luar box modal putih
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeModal();
         });
     </script>
 </body>
