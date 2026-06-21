@@ -99,38 +99,62 @@
     <!-- ─── MAIN ─── -->
     <main>
         <!-- ─── HERO ─── -->
-        <section id="hero" class="hero">
+        <section id="hero" class="hero relative">
             <div class="hero-inner relative overflow-hidden flex items-center w-full">
-                <!-- Background Glow-->
+
                 <div class="absolute inset-0 z-0 pointer-events-none overflow-hidden">
-                    <div class="absolute top-0 left-0 w-full h-full opacity-60"
-                        style="background: radial-gradient(circle at 20% 30%, #2563EB 0%, transparent 50%);">
+                    <div class="absolute inset-0 opacity-15"
+                        style="background-image: linear-gradient(rgba(255,255,255,0.2) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.2) 1px, transparent 1px); background-size: 30px 30px;">
                     </div>
 
-                    <div class="absolute inset-0 bg-[#153885] -z-10"></div>
+                    <div class="absolute -top-40 -left-40 w-96 h-96 opacity-40 blur-[100px] rounded-full bg-blue-500">
+                    </div>
+                    <div
+                        class="absolute -bottom-20 -right-20 w-80 h-80 opacity-30 blur-[120px] rounded-full bg-cyan-400">
+                    </div>
+
+                    <div class="absolute inset-0 bg-[#1E3A8A] -z-10"></div>
                 </div>
 
-                <div class="hero-content relative z-2 w-full">
-                    <div class="hero-badge">Software House Indonesia #1</div>
-                    <h1 class="w-full max-w-none">
-                        Digitalkan Bisnis Anda dengan Solusi Modern</span>
+                <div class="hero-content relative z-10 w-full">
+                    <div class="hero-badge gap-2 backdrop-blur-md">
+                        <span class="flex h-2 w-2 relative">
+                            <span
+                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-cyan-400"></span>
+                        </span>
+                        Software House Indonesia #1
+                    </div>
+
+                    <h1 class="w-full max-w-2xl font-extrabold tracking-tight text-white mb-4">
+                        Digitalkan Bisnis <span
+                            class="bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-400 bg-clip-text text-transparent">UMKM
+                            Anda</span> dengan Solusi Modern
                     </h1>
 
-                    <p class="hero-sub w-full">Aplikasi Siap Pakai Untuk Bisnis Kamu!</p>
+                    <p class="hero-sub w-full font-bold tracking-wide">
+                        Aplikasi Siap Pakai Untuk Melejitkan Bisnis Kamu!
+                    </p>
 
                     <p
-                        class="text-white/80 text-base sm:text-lg leading-relaxed mb-6 max-w-xl tracking-[0.2px] text-justify">
-                        Kami membangun produk digital yang tidak hanya terlihat bagus, tapi benar-benar bekerja untuk
-                        bisnis Anda. Dari website profesional hingga sistem manajemen terpadu.
+                        class="text-slate-400 text-sm sm:text-base leading-relaxed mb-8 max-w-xl tracking-[0.2px] text-justify opacity-90">
+                        Kami membangun produk digital berstandar industri yang dirancang khusus untuk memodernisasi
+                        operasional UMKM. Dari landing page interaktif hingga sistem manajemen pintar.
                     </p>
 
                     <div class="hero-actions flex gap-4">
                         <a href="#contact"
-                            class="btn-primary bg-[#FFCC00] text-black inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl text-decoration-none font-bold whitespace-nowrap transition-all hover:bg-[#e6b800]">
+                            class="btn-primary bg-[#FFCC00] text-black inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-bold whitespace-nowrap transition-all shadow-lg shadow-yellow-500/10 hover:shadow-yellow-500/20 hover:-translate-y-0.5">
                             Konsultasi Gratis
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
                         </a>
                         <a href="#services"
-                            class="btn-secondary bg-white/30 text-white inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-bold whitespace-nowrap transition-all hover:bg-white/40">
+                            class="btn-secondary bg-white/5 text-white border border-white/10 backdrop-blur-sm inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-bold whitespace-nowrap transition-all hover:bg-white/10 hover:border-white/20 hover:-translate-y-0.5">
                             Lihat Layanan
                         </a>
                     </div>
@@ -632,7 +656,8 @@
 
             <div
                 class="footer-bottom flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t border-gray-200 mt-8">
-                <p class="text-sm text-gray-500 m-0">Copyright © 2026 <a href="https://webinajaid.vercel.app" class="text-white hover:text-blue-600 transition-colors">WebinAja</a>. All
+                <p class="text-sm text-gray-500 m-0">Copyright © 2026 <a href="https://webinajaid.vercel.app"
+                        class="text-white hover:text-blue-600 transition-colors">WebinAja</a>. All
                     rights reserved.</p>
 
                 <a href="javascript:void(0)" id="openTerms"
