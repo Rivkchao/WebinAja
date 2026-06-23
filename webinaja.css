@@ -8,6 +8,37 @@
   --gray-400: #9ca3af;
   --gray-500: #6b7280;
   --gray-700: #374151;
+}
+
+/* ─── SCROLLBAR FOR CHROME, EDGE, SAFARI ─── */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3b82f6;
+  border-radius: 6px;
+  border: 3px solid #f1f5f9; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffb800; 
+}
+
+
+/* ─── SCROLLBAR FOR FIREFOX ─── */
+@supports (scrollbar-color: auto) {
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: #3b82f6 #f1f5f9;
+  }
+}
+
+:root {
   --text: #1a2236;
   --radius-lg: 20px;
   --radius-xl: 28px;
@@ -18,7 +49,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 90px;
+  scroll-padding-top: 70px;
 }
 
 body {
@@ -28,10 +59,7 @@ body {
   overflow-x: hidden;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
   font-family: 'Poppins', 'Arial Narrow', Arial, sans-serif;
   line-height: 1.15;
 }
@@ -39,7 +67,7 @@ h4 {
 /* ─── NAVBAR ─── */
 header {
   position: sticky;
-  top: 0.5px;
+  top: 0;
   z-index: 100;
   background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(16px);
@@ -164,8 +192,9 @@ nav {
 
 /* ─── HERO ─── */
 .hero {
-  max-width: 1440px;
-  margin: 40px auto;
+  max-width: 1500px;
+  margin: 20px auto;
+  margin-bottom: 70px;
   padding: 0 24px;
 }
 
@@ -219,11 +248,28 @@ nav {
 .hero .btn-secondary {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.hero-vector-right {
+  z-index: 10;
+}
+
+.hero-image-animate {
+  filter: drop-shadow(0 20px 30px rgba(0,0,0,0.3));
+}
 /* ─── END OF HERO ─── */
 
-/* ─── SECTION COMMON ─── */
+/* ─── ABOUT ─── */
+.about-text p {
+  color: var(--gray-500);
+  font-size: 1rem;
+  margin-top: 20px;
+  line-height: 1.8;
+}
+/* --- END OF ABOUT --- */
+
+/* SECTION ABOUT & SERVICES */
 .section {
-  max-width: 1280px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 0px 24px;
 }
@@ -239,29 +285,6 @@ nav {
   letter-spacing: -0.5px;
   color: var(--navy);
 }
-
-/* ─── ABOUT ─── */
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 64px;
-  align-items: center;
-}
-
-.about-text p {
-  color: var(--gray-500);
-  font-size: 1rem;
-  margin-top: 20px;
-  line-height: 1.8;
-}
-
-.about-image img {
-  z-index: 1;
-  width: 100%;
-  background: transparent;
-  border-radius: var(--radius-xl);
-}
-/* --- END OF ABOUT --- */
 
 /* ─── WHY US ─── */
 .why-us {
@@ -674,7 +697,6 @@ nav {
 
 /* ─── CONTACT ─── */
 .contact-section {
-  background: var(--gray-100);
   padding: 80px 0;
   margin-top: 60px;
 }
@@ -752,7 +774,8 @@ nav {
 }
 
 .btn-blue {
-  background: var(--navy);
+  background: linear-gradient(135deg, #ffcc00 0%, #ffb800 100%);
+  color: black;
 }
 
 .btn-blue svg {
@@ -761,7 +784,8 @@ nav {
 }
 
 .btn-blue:hover {
-  box-shadow: 0 10px 25px rgba(79, 70, 229, 0.35);
+  background: linear-gradient(135deg, #ffb800 0%, #ffa500 100%);
+  box-shadow: 0 10px 25px rgba(255, 184, 0, 0.35);
 }
 
 .contact-info {
@@ -997,7 +1021,7 @@ nav {
   }
 
   .about-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 40px;
   }
 
@@ -1027,7 +1051,7 @@ nav {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .nav-links {
     display: none;
   }
