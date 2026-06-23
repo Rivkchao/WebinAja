@@ -35,7 +35,6 @@
         rel="stylesheet">
 
     <!-- Stylesheets -->
-    <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="webinaja.css">
 
@@ -113,7 +112,7 @@
                         class="absolute -bottom-20 -right-20 w-80 h-80 opacity-30 blur-[120px] rounded-full bg-cyan-400">
                     </div>
 
-                    <div class="absolute inset-0 bg-[#1E3A8A] -z-10"></div>
+                    <div class="absolute inset-0 bg-[navy] -z-10"></div>
                 </div>
 
                 <div class="hero-content relative z-10 w-full">
@@ -128,7 +127,7 @@
 
                     <h1 class="w-full max-w-2xl font-extrabold tracking-tight text-white mb-4">
                         Digitalkan Bisnis <span
-                            class="bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-400 bg-clip-text text-transparent">UMKM
+                            class="bg-linear-to-r from-blue-400 via-cyan-400 to-indigo-400 bg-clip-text text-transparent">UMKM
                             Anda</span> dengan Solusi Modern
                     </h1>
 
@@ -184,120 +183,89 @@
         </section>
 
         <!-- ─── WHY US ─── -->
-        <section id="why-us" class="why-us relative">
-            <div class="section">
-                <div class="why-header mx-auto mb-20 text-center">
-                    <h2 class="section-title">Mengapa Bisnis Anda Harus Pilih WebinAja?</h2>
+        <section class="why-us">
+            <div class="container">
+                <div class="section-header">
+                    <span>HARUS WebinAja</span>
+                    <h2>Mengapa Bisnis Anda Harus Pilih WebinAja?</h2>
+                    <p>Kami hadir sebagai partner strategis yang memahami kebutuhan nyata dan skala bisnis UMKM.</p>
                 </div>
 
-                <div class="why-timeline mx-auto relative">
-                    <!-- Item 1 -->
-                    <div class="why-item fade-up">
-                        <div class="why-number">1</div>
-                        <div class="why-content-card">
-                            <div class="why-img-placeholder">
-                                <svg width="60" height="60" viewBox="0 0 24 24" fill="rgba(255,255,255,0.2)">
-                                    <path
-                                        d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z" />
+                <div class="why-us-grid">
+                    <div class="why-us-card blue">
+                        <div class="card-number">01</div>
+                        <div class="icon-circle">
+                            <div class="icon-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <line x1="12" y1="1" x2="12" y2="23"></line>
+                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
                                 </svg>
                             </div>
-                            <div class="why-text-box">
-                                <h3>Pembuatan Website</h3>
-                                <p>Aplikasi web atau mobile yang dibangun khusus sesuai alur kerja dan kebutuhan unik
-                                    bisnis anda untuk menjangkau pasar lebih luas.</p>
-                            </div>
                         </div>
+                        <h3>Ramah Kantong UMKM</h3>
+                        <div class="divider"></div>
+                        <p>Solusi digital dengan harga kompetitif dan transparan. Dirancang pas dengan anggaran
+                            pengembangan bisnis Anda tanpa potong kualitas.</p>
+                        <div class="card-footer">Harga Pas & Transparan</div>
                     </div>
 
-                    <!-- Item 2 -->
-                    <div class="why-item fade-up">
-                        <div class="why-number">2</div>
-                        <div class="why-content-card">
-                            <div class="why-img-placeholder">
-                                <svg width="60" height="60" viewBox="0 0 24 24" fill="rgba(255,255,255,0.2)">
-                                    <path
-                                        d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96C5 16.1 6.9 18 9 18h12v-2H9.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63H19c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1 1 0 0 0 23.44 5H5.21l-.94-2H1z" />
+                    <div class="why-us-card green">
+                        <div class="card-number">02</div>
+                        <div class="icon-circle">
+                            <div class="icon-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                    <polyline points="2 17 12 22 22 17"></polyline>
+                                    <polyline points="2 12 12 17 22 12"></polyline>
                                 </svg>
                             </div>
-                            <div class="why-text-box">
-                                <h3>Aplikasi Kasir (POS)</h3>
-                                <p>Sistem point-of-sale modern yang memudahkan transaksi, manajemen produk, laporan
-                                    penjualan harian, dan analitik bisnis secara real-time.</p>
-                            </div>
                         </div>
+                        <h3>Kustomisasi Fleksibel</h3>
+                        <div class="divider"></div>
+                        <p>Bebas sesuaikan fitur produk. Selagi masih dalam koridor syarat & ketentuan (S&K),
+                            kustomisasi berjalan tanpa biaya tambahan tersembunyi.</p>
+                        <div class="card-footer">Sesuaikan Kebutuhan Anda</div>
                     </div>
 
-                    <!-- Item 3 -->
-                    <div class="why-item fade-up">
-                        <div class="why-number">3</div>
-                        <div class="why-content-card">
-                            <div class="why-img-placeholder">
-                                <svg width="60" height="60" viewBox="0 0 24 24" fill="rgba(255,255,255,0.2)">
-                                    <path
-                                        d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-2 10H6v-2h12v2zm0-4H6v-2h12v2z" />
+                    <div class="why-us-card purple">
+                        <div class="card-number">03</div>
+                        <div class="icon-circle">
+                            <div class="icon-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
                                 </svg>
                             </div>
-                            <div class="why-text-box">
-                                <h3>Aplikasi Inventaris</h3>
-                                <p>Kelola stok barang, lacak pergerakan inventaris, dan dapatkan notifikasi otomatis
-                                    ketika stok menipis. Efisiensi operasional maksimal.</p>
-                            </div>
                         </div>
+                        <h3>Pengerjaan Kilat</h3>
+                        <div class="divider"></div>
+                        <p>Kami tahu waktu Anda berharga. Melalui timeline yang terstruktur ketat, aplikasi Anda selesai
+                            tepat waktu dan siap langsung dipakai jualan.</p>
+                        <div class="card-footer">Selesai Tepat Waktu</div>
                     </div>
 
-                    <!-- Item 4 -->
-                    <div class="why-item fade-up">
-                        <div class="why-number">4</div>
-                        <div class="why-content-card">
-                            <div class="why-img-placeholder">
-                                <svg width="60" height="60" viewBox="0 0 24 24" fill="rgba(255,255,255,0.2)">
-                                    <path
-                                        d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5z" />
+                    <div class="why-us-card orange">
+                        <div class="card-number">04</div>
+                        <div class="icon-circle">
+                            <div class="icon-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
                                 </svg>
                             </div>
-                            <div class="why-text-box">
-                                <h3>HR Information System</h3>
-                                <p>Manajemen karyawan terpadu dari absensi, penggajian, hingga evaluasi kinerja dalam
-                                    satu platform transparan.</p>
-                            </div>
                         </div>
-                    </div>
-
-                    <!-- Item 5 -->
-                    <div class="why-item fade-up">
-                        <div class="why-number">5</div>
-                        <div class="why-content-card">
-                            <div class="why-img-placeholder">
-                                <svg width="60" height="60" viewBox="0 0 24 24" fill="rgba(255,255,255,0.2)">
-                                    <path
-                                        d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
-                                    <path d="M7 10h2v2H7zm3-3h2v5h-2zm3 2h2v3h-2z" />
-                                </svg>
-                            </div>
-                            <div class="why-text-box">
-                                <h3>SEO Rank</h3>
-                                <p>Meningkatkan peringkat website di mesin pencari melalui strategi optimasi teknis,
-                                    konten, dan analisis keyword yang tepat.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Item 6 -->
-                    <div class="why-item fade-up">
-                        <div class="why-number">6</div>
-                        <div class="why-content-card">
-                            <div class="why-img-placeholder">
-                                <svg width="60" height="60" viewBox="0 0 24 24" fill="rgba(255,255,255,0.2)">
-                                    <path
-                                        d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z" />
-                                </svg>
-                            </div>
-                            <div class="why-text-box">
-                                <h3>Konsultasi Digitalisasi Bisnis</h3>
-                                <p>Tim konsultan kami membantu memetakan kebutuhan digital bisnis anda dan merancang
-                                    roadmap transformasi yang tepat sasaran.</p>
-                            </div>
-                        </div>
+                        <h3>Support Fleksibel</h3>
+                        <div class="divider"></div>
+                        <p>Komunikasi dua arah yang cair. Bebas atur dan pilih paket maintenance berkala mulai dari
+                            harian, mingguan, bulanan, hingga tahunan.</p>
+                        <div class="card-footer">Maintenance Berkala</div>
                     </div>
                 </div>
             </div>
@@ -366,10 +334,8 @@
             <div class="services-grid">
                 <div class="service-card fade-up" id="custom-software">
                     <div class="service-card-img">
-                        <svg viewBox="0 0 24 24">
-                            <path
-                                d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z" />
-                        </svg>
+                       <img src="Webinajalogofooter.png" alt="Custom Software"
+                            class="service-preview-img">
                     </div>
                     <div class="service-card-body">
                         <span class="service-tag">Web Development</span>
@@ -377,22 +343,20 @@
                         <p>Aplikasi web atau mobile yang dibangun khusus sesuai alur kerja dan kebutuhan unik bisnis
                             anda.</p>
                     </div>
-                    <div class="service-card-footer">
-                        <span>Lihat Demo</span>
-                        <svg viewBox="0 0 24 24" width="100" height="100" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                            <circle cx="12" cy="12" r="3"></circle>
+                     <div class="service-card-footer">
+                        <span>Lihat Demo Produk</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
                         </svg>
                     </div>
                 </div>
 
                 <div class="service-card fade-up" id="pos-system">
                     <div class="service-card-img">
-                        <svg viewBox="0 0 24 24">
-                            <path
-                                d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45-.03.12C5 14.9 5.9 16 7 16h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63H19c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1 1 0 0 0 23.44 5H5.21l-.94-2H1z" />
-                        </svg>
+                        <img src="Webinajalogofooter.png" alt="Aplikasi Kasir POS"
+                            class="service-preview-img">
                     </div>
                     <div class="service-card-body">
                         <span class="service-tag">POS System</span>
@@ -400,44 +364,41 @@
                         <p>Sistem kasir pintar dengan laporan real-time, manajemen produk, dan analitik penjualan.</p>
                     </div>
                     <div class="service-card-footer">
-                        <span>Lihat Demo</span>
-                        <svg viewBox="0 0 24 24" width="100" height="100" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                            <circle cx="12" cy="12" r="3"></circle>
+                        <span>Lihat Demo Produk</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
                         </svg>
                     </div>
                 </div>
 
                 <div class="service-card fade-up" id="inventory-system">
                     <div class="service-card-img">
-                        <svg viewBox="0 0 24 24">
-                            <path
-                                d="M20 6h-2.18c.07-.44.18-.88.18-1.35C18 2.06 15.94 0 13.35 0c-1.47 0-2.67.61-3.53 1.56L8.5 3.02 7.18 1.56C6.33.61 5.12 0 3.65 0 1.06 0-1 2.06-1 4.65c0 .47.1.91.18 1.35H-1v2h2v10c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8h2V6z" />
-                        </svg>
+                           <img src="Webinajalogofooter.png" alt="Aplikasi Inventaris"
+                            class="service-preview-img">
                     </div>
                     <div class="service-card-body">
                         <span class="service-tag">Inventory</span>
                         <h3>Aplikasi Inventaris</h3>
-                        <p>Kontrol stok secara akurat dengan notifikasi otomatis dan laporan pergerakan barang lengkap.
+                        <p>Kontrol stok secara akurat dengan notifikasi otomatis dan laporan pergerakan barang
+                            lengkap.
                         </p>
                     </div>
-                    <div class="service-card-footer">
-                        <span>Lihat Demo</span>
-                        <svg viewBox="0 0 24 24" width="100" height="100" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                            <circle cx="12" cy="12" r="3"></circle>
+                   <div class="service-card-footer">
+                        <span>Lihat Demo Produk</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
                         </svg>
                     </div>
                 </div>
 
                 <div class="service-card fade-up" id="hris-system">
                     <div class="service-card-img">
-                        <svg viewBox="0 0 24 24">
-                            <path
-                                d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
-                        </svg>
+                           <img src="Webinajalogofooter.png" alt="Aplikasi HRIS"
+                            class="service-preview-img">
                     </div>
                     <div class="service-card-body">
                         <span class="service-tag">HR System</span>
@@ -446,56 +407,53 @@
                             platform.</p>
                     </div>
                     <div class="service-card-footer">
-                        <span>Lihat Demo</span>
-                        <svg viewBox="0 0 24 24" width="100" height="100" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                            <circle cx="12" cy="12" r="3"></circle>
+                        <span>Lihat Demo Produk</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
                         </svg>
                     </div>
                 </div>
 
                 <div class="service-card fade-up" id="digital-consulting">
                     <div class="service-card-img">
-                        <svg viewBox="0 0 24 24">
-                            <path
-                                d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z" />
-                        </svg>
+                          <img src="Webinajalogofooter.png" alt="Consultant Digital Business"
+                            class="service-preview-img">
                     </div>
                     <div class="service-card-body">
                         <span class="service-tag">Consulting</span>
                         <h3>Konsultasi Digital Bisnis</h3>
-                        <p>Strategi dan roadmap transformasi digital yang disesuaikan dengan skala dan kebutuhan bisnis
+                        <p>Strategi dan roadmap transformasi digital yang disesuaikan dengan skala dan kebutuhan
+                            bisnis
                             anda.</p>
                     </div>
                     <div class="service-card-footer">
-                        <span>Lihat Demo</span>
-                        <svg viewBox="0 0 24 24" width="100" height="100" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                            <circle cx="12" cy="12" r="3"></circle>
+                        <span>Lihat Demo Produk</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
                         </svg>
                     </div>
                 </div>
 
                 <div class="service-card fade-up" id="seo-optimization">
                     <div class="service-card-img">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M11 3a8 8 0 105.29 14.29l4.7 4.7 1.41-1.41-4.7-4.7A8 8 0 0011 3z" />
-                            <path d="M8 12l2 2 4-4" />
-                        </svg>
+                         <img src="Webinajalogofooter.png" alt="Increasing SEO Rank"
+                            class="service-preview-img">
                     </div>
                     <div class="service-card-body">
                         <span class="service-tag">SEO Rank</span>
                         <h3>SEO Website</h3>
                         <p>Optimasi website agar mudah ditemukan di mesin pencari.</p>
                     </div>
-                    <div class="service-card-footer">
-                        <span>Lihat Demo</span>
-                        <svg viewBox="0 0 24 24" width="100" height="100" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                            <circle cx="12" cy="12" r="3"></circle>
+                     <div class="service-card-footer">
+                        <span>Lihat Demo Produk</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
                         </svg>
                     </div>
                 </div>
